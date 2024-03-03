@@ -1,6 +1,5 @@
 package com.phonebook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -8,28 +7,34 @@ import org.testng.annotations.Test;
 public class LoginTests extends TestBase {
 
     @BeforeMethod
-    public void ensurePrecondition(){
-        // if login Link is not present
-        if (!isElementPresent(By.cssSelector("[href='/login']"))){
-            //Click on Sign Out button
-            click(By.xpath("//button[.='Sign Out']"));
+    public void ensurePrecondition() {
+        if (!isLoginLinkPresent()) {
+            clickOnSignOutButton();
         }
     }
+
     @Test
     public void loginPositiveTest() {
-
-        // click on Login Link
-        click(By.cssSelector("[href='/login']"));
-        //enter email
-        type(By.name("email"), "tatya@gmail.com");
-        //enter password
-        type(By.name("password"), "77qazWsx$");
-        //click on the Login button
-        click(By.name("login"));
+        clickOnLoginLink();
+        fillLoginRegisterForm(new User()
+                .setEmail("tatya@gmail.com")
+                .setPassword("77qazWsx$"));
+        clickOnLoginButton();
         //assert Sing Out is present
-        Assert.assertTrue(isElementPresent(By.xpath("//button[.='Sign Out']")));
+        Assert.assertTrue(isSignOutButtonPresent());
 
     }
-    // один класс- проверка одной функции (один ассерт)
+
+    @Test
+    public void loginNegativeWithoutEmail() {
+        clickOnLoginLink();
+        fillLoginRegisterForm(new User()
+                .setPassword("77qazWsx$"));
+        clickOnLoginButton();
+        //assert Sing Out is present
+        Assert.assertTrue(isAlertAppears());
+
+    }
+
 
 }
