@@ -17,7 +17,8 @@ public class HomePageTests extends TestBase {
 
     @Test
     public void isHomeComponentPresentTest(){ // тестовый метод, вызывающий метод, проверяющий длинну компонента
-      //  System.out.println("Home Component is " + isHomeComponentPresent()); - такой способ используется только при отладке
+      //  System.out.println("Home Component is " + isHomeComponentPresent()); - такой способ используется только
+        //  при отладке
 
         Assert.assertTrue(isHomeComponentPresent()); // тест упадет, если элемент не найден
         /** Все тесты должны заканчиваться Assert*/
