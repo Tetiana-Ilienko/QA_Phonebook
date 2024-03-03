@@ -8,19 +8,15 @@ public class HomePageTests extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition(){
-        if(!isHomeComponentPresent()){
-            clickOnHomeLink();
+        if(!app.getHomePage().isHomeComponentPresent()){
+            app.getHomePage().clickOnHomeLink();
         }
     }
 
 
     @Test
-    public void isHomeComponentPresentTest(){ // тестовый метод, вызывающий метод, проверяющий длинну компонента
-      //  System.out.println("Home Component is " + isHomeComponentPresent()); - такой способ используется только
-        //  при отладке
-
-        Assert.assertTrue(isHomeComponentPresent()); // тест упадет, если элемент не найден
-        /** Все тесты должны заканчиваться Assert*/
+    public void isHomeComponentPresentTest(){
+        Assert.assertTrue(app.getHomePage().isHomeComponentPresent()); // тест упадет, если элемент не найден
 
     }
 
