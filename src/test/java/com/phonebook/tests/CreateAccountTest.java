@@ -1,15 +1,25 @@
 package com.phonebook.tests;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.time.Duration;
-
 public class CreateAccountTest extends TestBase {
+
+    // для того, чтобы тесты не падали , их нужно сделать независимыми друг от друга.
+    //Для каждого теста нужно написать BeforeMethod? проверяющий необходимые условия
+
+    @BeforeMethod
+    public void ensurePrecondition(){
+        // if login Link is not present
+        if (!isElementPresent(By.cssSelector("[href='/login']"))){
+            //Click on Sign Out button
+            click(By.xpath("//button[.='Sign Out']"));
+        }
+    }
+
+
 
 
     /**
@@ -37,29 +47,26 @@ public class CreateAccountTest extends TestBase {
     public void createExistedAccountNegativeTest() {
 
         // click on Login Link
-        driver.findElement(By.cssSelector("[href='/login']")).click();
-        //enter email
-        driver.findElement(By.name("email")).click();
-        driver.findElement(By.name("email")).clear();
-        driver.findElement(By.name("email")).sendKeys("tatya@gmail.com");
+//        driver.findElement(By.cssSelector("[href='/login']")).click();
+        click(By.cssSelector("[href='/login']"));
+
+
+        //enter email // автоматически создали из трех строк метод type  (refactor -> extract method)
+//        click(By.name("email"));
+//        driver.findElement(By.name("email")).clear();
+//        driver.findElement(By.name("email")).sendKeys("tatya@gmail.com");
+        type(By.name("email"), "tatya@gmail.com");
+        // так как он универсальный - перенесли его в базовый клас ( refactor -> pull members up
+
         //enter password
-        driver.findElement(By.name("password")).click();
-        driver.findElement(By.name("password")).clear();
-        driver.findElement(By.name("password")).sendKeys("77qazWsx$");
+        type(By.name("password"), "77qazWsx$");// автоматически создали  метод (refactor -> extract method)
+
         //click on the Registration
-        driver.findElement(By.name("registration")).click();
+        click(By.name("registration"));
+
         //assert Sign Out button is present
         Assert.assertTrue(isAlertAppears());
     }
 
 
-    public boolean isAlertAppears() {
-        Alert alert = new WebDriverWait(driver, Duration.ofSeconds(15))
-                .until(ExpectedConditions.alertIsPresent());
-        if (alert == null) {
-            return false;
-        } else {
-            return true;
-        }
-    }
 }
