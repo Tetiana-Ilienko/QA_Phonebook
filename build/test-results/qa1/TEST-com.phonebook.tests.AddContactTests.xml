@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phonebook.tests.AddContactTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-03-04T10:48:23" hostname="DESKTOP-4TCU6A3" time="36.501">
+  <properties/>
+  <testcase name="addContactPositiveTest" classname="com.phonebook.tests.AddContactTests" time="1.828"/>
+  <testcase name="addContactPositiveTestFromDataProvider[0](Oliver, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper)" classname="com.phonebook.tests.AddContactTests" time="1.147"/>
+  <testcase name="addContactPositiveTestFromDataProvider[1](Oliver1, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper)" classname="com.phonebook.tests.AddContactTests" time="1.141"/>
+  <testcase name="addContactPositiveTestFromDataProvider[2](Oliver2, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper)" classname="com.phonebook.tests.AddContactTests" time="1.133"/>
+  <system-out><![CDATA[11:48:22.731 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTest with data: []
+11:48:24.996 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTest
+11:48:24.997 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:48:24.997 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+11:48:25.007 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper]
+11:48:36.614 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTestFromDataProvider
+11:48:36.620 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:48:36.620 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+11:48:36.621 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver1, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper]
+11:48:48.152 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTestFromDataProvider
+11:48:48.153 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:48:48.153 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+11:48:48.153 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver2, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper]
+11:48:59.658 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTestFromDataProvider
+11:48:59.659 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+11:48:59.659 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
