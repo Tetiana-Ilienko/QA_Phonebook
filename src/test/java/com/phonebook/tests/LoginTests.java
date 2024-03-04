@@ -14,7 +14,7 @@ public class LoginTests extends TestBase {
         }
     }
 
-    @Test
+    @Test(priority = 1)
     public void loginPositiveTest() {
         app.getUser().clickOnLoginLink();
         app.getUser().fillLoginRegisterForm(new User()
@@ -26,7 +26,7 @@ public class LoginTests extends TestBase {
 
     }
 
-    @Test
+    @Test (priority = 2)
     public void loginNegativeWithoutEmail() {
         app.getUser().clickOnLoginLink();
         app.getUser().fillLoginRegisterForm(new User()
