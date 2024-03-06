@@ -32,9 +32,9 @@ task qa1(type: Test) {
         def suite2 = project.hasProperty("suite2")
 
         if(suite1){
-            suite1 'src/test/resources/testng.xml'
+            suites 'src/test/resources/testng.xml'
         }else if (suite2){
-            suite2 'src/test/resources/regression.xml'
+            suites 'src/test/resources/regression.xml'
         }
 
 

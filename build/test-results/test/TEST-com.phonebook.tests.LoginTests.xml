@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.phonebook.tests.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-06T08:59:24" hostname="DESKTOP-4TCU6A3" time="1.091">
+<testsuite name="com.phonebook.tests.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-06T09:21:51" hostname="DESKTOP-4TCU6A3" time="1.025">
   <properties/>
-  <testcase name="loginPositiveTest" classname="com.phonebook.tests.LoginTests" time="1.091"/>
-  <system-out><![CDATA[09:59:24.332 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test loginPositiveTest with data: []
-09:59:25.441 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: loginPositiveTest
-09:59:25.442 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
-09:59:25.442 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+  <testcase name="loginPositiveTest" classname="com.phonebook.tests.LoginTests" time="1.025"/>
+  <system-out><![CDATA[10:21:51.490 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test loginPositiveTest with data: []
+10:21:52.543 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: loginPositiveTest
+10:21:52.543 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:21:52.543 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
