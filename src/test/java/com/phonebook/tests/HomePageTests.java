@@ -17,7 +17,6 @@ public class HomePageTests extends TestBase {
     @Test
     public void isHomeComponentPresentTest(){
         Assert.assertTrue(app.getHomePage().isHomeComponentPresent()); // тест упадет, если элемент не найден
-
     }
 
 

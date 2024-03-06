@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">4</div>
+<div class="counter">8</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">5.249s</div>
+<div class="counter">9.686s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,22 +79,42 @@
 </thead>
 <tr>
 <td class="success">addContactPositiveTest</td>
-<td class="success">1.828s</td>
+<td class="success">1.814s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithFile[0](Contact{name='Oliver', phone='12365478952'})</td>
+<td class="success">1.101s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithFile[1](Contact{name='Oli', phone='12035648974'})</td>
+<td class="success">1.122s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithFile[2](Contact{name='Oliveroliveroliver', phone='12358942587'})</td>
+<td class="success">1.099s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">addContactPositiveTestFromDataProviderWithFile[3](Contact{name='Oliver-Oliver', phone='1205362147855'})</td>
+<td class="success">1.091s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">addContactPositiveTestFromDataProvider[0](Oliver, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper)</td>
-<td class="success">1.147s</td>
+<td class="success">1.166s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">addContactPositiveTestFromDataProvider[1](Oliver1, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper)</td>
-<td class="success">1.141s</td>
+<td class="success">1.176s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">addContactPositiveTestFromDataProvider[2](Oliver2, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper)</td>
-<td class="success">1.133s</td>
+<td class="success">1.117s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -102,22 +122,46 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>11:48:22.731 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTest with data: []
-11:48:24.996 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTest
-11:48:24.997 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
-11:48:24.997 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
-11:48:25.007 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper]
-11:48:36.614 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTestFromDataProvider
-11:48:36.620 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
-11:48:36.620 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
-11:48:36.621 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver1, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper]
-11:48:48.152 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTestFromDataProvider
-11:48:48.153 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
-11:48:48.153 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
-11:48:48.153 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver2, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper]
-11:48:59.658 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTestFromDataProvider
-11:48:59.659 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
-11:48:59.659 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+<pre>10:00:16.735 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTest with data: []
+10:00:17.143 [Test worker] INFO  com.phonebook.tests.TestBase -- Add to:
+10:00:19.032 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTest
+10:00:19.032 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:00:19.032 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+10:00:19.040 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper]
+10:00:29.339 [Test worker] INFO  com.phonebook.tests.TestBase -- Add to:
+10:00:30.563 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTestFromDataProvider
+10:00:30.563 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:00:30.563 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+10:00:30.564 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver1, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper]
+10:00:40.852 [Test worker] INFO  com.phonebook.tests.TestBase -- Add to:
+10:00:42.085 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTestFromDataProvider
+10:00:42.085 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:00:42.085 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+10:00:42.085 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver2, Kan, 1234567890, kan@gm.com, Berlin, goalkeeper]
+10:00:52.367 [Test worker] INFO  com.phonebook.tests.TestBase -- Add to:
+10:00:53.539 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTestFromDataProvider
+10:00:53.539 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:00:53.539 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+10:00:53.541 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithFile with data: [Contact{name='Oliver', phone='12365478952'}]
+10:01:03.818 [Test worker] INFO  com.phonebook.tests.TestBase -- Add to:
+10:01:04.980 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithFile
+10:01:04.980 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:01:04.980 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+10:01:04.981 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithFile with data: [Contact{name='Oli', phone='12035648974'}]
+10:01:15.260 [Test worker] INFO  com.phonebook.tests.TestBase -- Add to:
+10:01:16.440 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithFile
+10:01:16.440 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:01:16.440 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+10:01:16.441 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithFile with data: [Contact{name='Oliveroliveroliver', phone='12358942587'}]
+10:01:26.765 [Test worker] INFO  com.phonebook.tests.TestBase -- Add to:
+10:01:27.922 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithFile
+10:01:27.922 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:01:27.922 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+10:01:27.923 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTestFromDataProviderWithFile with data: [Contact{name='Oliver-Oliver', phone='1205362147855'}]
+10:01:38.245 [Test worker] INFO  com.phonebook.tests.TestBase -- Add to:
+10:01:39.399 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithFile
+10:01:39.399 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:01:39.399 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
 </pre>
 </span>
 </div>
@@ -129,7 +173,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6.4</a> at 4 бер. 2024 р., 11:49:45</p>
+<a href="http://www.gradle.org">Gradle 8.0</a> at 6 Mar 2024, 10:02:34</p>
 </div>
 </div>
 </body>

@@ -23,7 +23,6 @@ public class LoginTests extends TestBase {
         app.getUser().clickOnLoginButton();
         //assert Sing Out is present
         Assert.assertTrue(app.getUser().isSignOutButtonPresent());
-
     }
 
     @Test (priority = 2)
@@ -33,7 +32,6 @@ public class LoginTests extends TestBase {
                 .setPassword("77qazWsx$"));
         app.getUser().clickOnLoginButton();
         Assert.assertTrue(app.getUser().isAlertAppears());
-
     }
 
 

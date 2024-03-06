@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phonebook.tests.LoginTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-06T08:59:24" hostname="DESKTOP-4TCU6A3" time="1.091">
+  <properties/>
+  <testcase name="loginPositiveTest" classname="com.phonebook.tests.LoginTests" time="1.091"/>
+  <system-out><![CDATA[09:59:24.332 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test loginPositiveTest with data: []
+09:59:25.441 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: loginPositiveTest
+09:59:25.442 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+09:59:25.442 [Test worker] INFO  com.phonebook.tests.TestBase -- ******************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
